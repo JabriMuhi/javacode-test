@@ -5,10 +5,14 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Positive;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.jabrimuhi.javacodetest.model.OperationType;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class WalletUpdateRequestDTO {
 
     @Schema(description = "The ID of the wallet", example = "550e8400-e29b-41d4-a716-446655440000")
